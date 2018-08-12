@@ -10,8 +10,9 @@ let g:loaded_air = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-nmap t :call air#transparent()
-"
+command! Air :call air#transparent()
+":cnoremap air :call air#transparent()
+
 " user setting valid
 let &cpo = s:save_cpo
 unlet s:save_cpo

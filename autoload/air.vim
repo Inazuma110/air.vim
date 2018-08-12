@@ -11,7 +11,6 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! air#transparent()
-  echo "B"
   highlight Normal ctermbg=none
   highlight NonText ctermbg=none
   highlight LineNr ctermbg=none

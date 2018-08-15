@@ -1,19 +1,19 @@
 scriptencoding utf-8
 
 " no reload
-"if exists('g:loaded_air')
-"  finish
-"endif
-"let g:loaded_air = 1
+if exists('g:loaded_air')
+  finish
+endif
+let g:loaded_air = 1
 
 "user settings invalid
 let s:save_cpo = &cpo
 set cpo&vim
 
 
-noremap t :call air#changeState()
-command! Air :call air#transparent()
-command! Nonair :call air#no_transparent()
+noremap t :call air#change_background_state()
+command! Trance :call air#to_transparent()
+command! Nontrace :call air#to_no_transparent()
 
 " user setting valid
 let &cpo = s:save_cpo

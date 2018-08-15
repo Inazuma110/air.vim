@@ -10,6 +10,12 @@ let g:loaded_air = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+function! air#no_transparent()
+  let l:color_schema_name = execute('colorscheme')
+  execute('colorscheme ' . strpart(l:color_schema_name, 1))
+  unlet l:color_schema_name
+endfunction
+
 function! air#transparent()
   highlight Normal ctermbg=none
   highlight NonText ctermbg=none

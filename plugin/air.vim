@@ -11,7 +11,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 command! Air :call air#transparent()
-":cnoremap air :call air#transparent()
+command! Nonair :call air#no_transparent()
 
 " user setting valid
 let &cpo = s:save_cpo

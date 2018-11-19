@@ -11,7 +11,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-noremap t :call air#change_background_state()
+command! TranceToggle :call air#change_background_state()
 command! Trance :call air#to_transparent()
 command! Nontrace :call air#to_no_transparent()
 

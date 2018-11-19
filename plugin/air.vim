@@ -12,8 +12,8 @@ set cpo&vim
 
 
 command! TranceToggle :call air#change_background_state()
-command! Trance :call air#to_transparent()
-command! Nontrace :call air#to_no_transparent()
+" command! Trance :call air#to_transparent()
+" command! Nontrace :call air#to_no_transparent()
 
 " user setting valid
 let &cpo = s:save_cpo

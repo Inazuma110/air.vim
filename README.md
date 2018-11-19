@@ -5,7 +5,9 @@
 Your vim colorscheme switch transeparent very easy.
 
 ## Usage
-Type t in normal mode.
+```vimscript
+:TranceToggle
+```
 
 ## Install
 dein.toml

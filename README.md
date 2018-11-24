@@ -12,7 +12,7 @@ Your vim colorscheme switch transeparent very easy.
 ## Install
 dein.toml
 ```toml
-[[plugin]]
+[[plugins]]
 repo = 'Inazuma110/air.vim'
 ```
 
